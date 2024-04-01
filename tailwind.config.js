@@ -12,6 +12,7 @@ module.exports = {
         secondary: '#003da5',
         third: '#00205b',
         bgradient: 'linear-gradient(90deg, rgba(4, 25, 61, .95), rgba(4, 25, 61, .2) 71%);',
+        wrappercolor: '#f2f7ff',
       },
       height: {
         sm: 'calc((100vh - 66px)/2)',
@@ -20,7 +21,7 @@ module.exports = {
       },
       width: {
         default: '1512.8px',
-      }
+      },
     },
   },
   plugins: [],

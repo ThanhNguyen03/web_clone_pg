@@ -39,7 +39,7 @@ export default function Content2() {
                         <h3 className="absolute text-4xl text-white left-5 bottom-10 font-extrabold">Quan hệ với nhà đầu tư</h3>
                     </div>
                 </Link>
-                <Link href={'/login'} className="flex flex-col justify-start px-10 py-auto max-w-[600px] z-10 content2">
+                <Link href={'/'} className="flex flex-col justify-start px-10 py-auto max-w-[600px] z-10 content2">
                     <div className="flex flex-col justify-start overflow-hidden relative rounded-3xl">
                         <Image src={'/IMG_2809.JPG'} alt="link2" layout="responsive" width={100} height={10} className="img-content"/>
                         <div className="translate-y-full flex flex-col justify-start absolute left-0 bottom-0 w-[90%] bg-white z-20 text-secondary rounded-tr-3xl transition-transform duration-500">

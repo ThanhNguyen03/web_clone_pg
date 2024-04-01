@@ -7,13 +7,11 @@ import ScrollNav from "@/components/items/scrollAnimation";
 export default function Home() {
   return (
     <>
-      <Hero id="section1"/>
-      
+      <Hero />
       <ScrollNav/>
-      <BrandGallery id="hp-item-1"/>
-      <Content1 id="hp-item-2"/>
-      <Content2 id="hp-item-3"/>
-      
+      <BrandGallery />
+      <Content1 />
+      <Content2/>
     </>
   );
 }
