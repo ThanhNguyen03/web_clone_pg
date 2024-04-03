@@ -5,28 +5,28 @@ import UpRightArrow from "../icons/upRightArrow";
 export default function Footer() {
     return (
         <footer className="bg-secondary z-0 w-full h-fill">
-            <div className="flex justify-center flex-col text-center mt-32 pt-14 gap-8">    
+            <div className="flex justify-center flex-col text-center mt-32 pt-14 gap-8 mx-auto items-center max-w-[1280px]">    
                 <Link href={'/'} className="rounded-full font-semibold text-white border border-white mx-auto px-6 py-2 hover:bg-white hover:text-secondary duration-500">
                     Quay trở về đầu tiên
                 </Link>
-                <div className="footer mx-40">
-                    <div className="text-white text-start flex flex-col text-sm">
-                        <Link href={'/'} className="mb-2 flex items-center gap-2">
+                <div className="flex w-full custom-max:flex-col custom-max:ml-12">
+                    <div className="text-white text-start flex custom-min:flex-col text-sm mr-auto custom-max:gap-24 custom-max:mb-8">
+                        <Link href={'/'} className="mb-2 flex items-center gap-2 w-fit">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                             </svg>
-                            <p className="hover:underline hover:underline-offset-2">Liên hệ với chúng tôi</p>
+                            <p className="hover:underline hover:underline-offset-2 text-lg">Liên hệ với chúng tôi</p>
                         </Link>
                         <Link href={'/'} className="mb-2 flex items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
                             </svg>
-                            <p className="hover:underline hover:underline-offset-2">Cơ hội việc làm</p>
+                            <p className="hover:underline hover:underline-offset-2 text-lg">Cơ hội việc làm</p>
                             <UpRightArrow>children=w-4 h-4</UpRightArrow>
                         </Link>
                     </div>
-                    <div className="text-white text-start flex flex-col text-sm">
-                        <h2 className="uppercase font-semibold text-lg">
+                    <div className="text-white text-start flex flex-col w-[20%] custom-max:w-full custom-max:mb-6">
+                        <h2 className="uppercase font-semibold text-xl">
                             Đối tác và nhà đầu tư
                         </h2>
                         <Link href={'/'} className="mt-2 flex items-center gap-2">
@@ -42,8 +42,8 @@ export default function Footer() {
                             <UpRightArrow>children=w-4 h-4</UpRightArrow>
                         </Link>
                     </div>
-                    <div className="text-white text-start flex flex-col text-sm">
-                        <h2 className="uppercase font-semibold text-lg">
+                    <div className="text-white text-start flex flex-col w-[20%] custom-max:w-full custom-max:mb-6">
+                        <h2 className="uppercase font-semibold text-xl">
                             Công ty chúng tôi
                         </h2>
                         <Link href={'/'} className="mt-2 flex items-center gap-2">
@@ -67,14 +67,14 @@ export default function Footer() {
                             <UpRightArrow>children=w-4 h-4</UpRightArrow>
                         </Link>
                     </div>
-                    <div className="text-white text-start flex flex-col text-sm">
-                        <h2 className="uppercase font-semibold text-lg">Hữu ích</h2>
+                    <div className="text-white text-start flex flex-col w-[10%] custom-max:w-full custom-max:mb-6">
+                        <h2 className="uppercase font-semibold text-xl">Hữu ích</h2>
                         <Link href={'/'} className="mt-2 flex items-center gap-2">
                             <p className="hover:underline hover:underline-offset-2">Sơ đồ trang web</p>
                         </Link>
                     </div>
-                    <div className="text-white text-start flex flex-col text-sm">
-                        <h2 className="uppercase font-semibold text-lg">
+                    <div className="text-white text-start flex flex-col w-[15%] custom-max:w-full custom-max:mb-6">
+                        <h2 className="uppercase font-semibold text-xl">
                             Pháp luật
                         </h2>
                         <Link href={'/'} className="mt-2 flex items-center gap-2">
@@ -90,18 +90,30 @@ export default function Footer() {
                             <UpRightArrow>children=w-4 h-4</UpRightArrow>
                         </Link>
                     </div>
+                    <div className="text-white text-start flex flex-col w-[15%] custom-max:w-full custom-max:mb-6 custom-min:hidden">
+                        <h2 className="uppercase font-semibold text-xl mb-4">CHỌN ĐỊA ĐIỂM CỦA BẠN</h2>
+                        <div className="w-full flex">
+                            <Link href={'/'} 
+                            className="text-center px-5 py-1 text-secondary my-auto border border-white rounded-full flex justify-center font-semibold bg-white hover:bg-secondary hover:text-white">
+                                Việt Nam
+                                <GlobalIcon/>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
-                <div className="grid grid-cols-3 mb-5 items-center">
-                    <Link href={'/'} 
-                    className="text-center ml-24 px-5 py-1 text-secondary mx-auto my-auto border border-white rounded-full flex justify-center font-semibold bg-white hover:bg-secondary hover:text-white">
-                        Việt Nam
-                        <GlobalIcon/>
-                    </Link>
-                    <div className="text-center text-white items-center justify-center text-sm mt-2">
+                <div className="flex w-full mb-5 items-center custom-min:justify-between">
+                    <div className="w-full flex custom-max:hidden">
+                        <Link href={'/'} 
+                        className="text-center px-5 py-1 text-secondary my-auto border border-white rounded-full flex justify-center font-semibold bg-white hover:bg-secondary hover:text-white">
+                            Việt Nam
+                            <GlobalIcon/>
+                        </Link>
+                    </div>
+                    <div className="text-center text-white items-center text-sm mt-2 w-full custom-max:absolute">
                         &copy; 2024 Procer & Gamble
                     </div>
-                    <div className="flex justify-center items-center gap-5">
-                        <Link href='https://www.facebook.com'>
+                    <div className="flex items-center gap-5 w-full custom-max:justify-center custom-max:mb-20">
+                        <Link className="custom-min:ml-auto" href='https://www.facebook.com'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-6 h-6">
                                 <path fill="#fff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
                             </svg>

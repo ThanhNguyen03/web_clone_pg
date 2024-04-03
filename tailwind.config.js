@@ -22,6 +22,14 @@ module.exports = {
       width: {
         default: '1512.8px',
       },
+      screens: {
+        'custom-min': {
+          min: '900px',
+        },
+        'custom-max': {
+          max: '900px',
+        },
+      },
     },
   },
   plugins: [],

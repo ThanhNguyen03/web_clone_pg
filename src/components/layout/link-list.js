@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-export default function Content2() {
+export default function LinkList() {
     const [ref, inView] = useInView({
         triggerOnce: true, // Đảm bảo animation chỉ chạy một lần
         threshold: 0, // Nếu một phần trên 50% hiển thị trong viewport, coi là hiển thị
@@ -19,7 +19,7 @@ export default function Content2() {
       }, [inView]);
     return (
         <section ref={ref} className={"mt-40 " + `${isVisible ? "animated" : ""}`}>
-            <div className="flex justify-center items-center gap-20">
+            <div className="flex justify-center items-center custom-min:gap-20 custom-max:flex-col custom-max:gap-10">
                 <Link href={'/'} className="flex flex-col justify-start px-10 py-auto max-w-[600px] z-10 relative content2">
                     <div className="flex flex-col justify-start overflow-hidden relative rounded-3xl">
                         <Image src={'/IMG_2809.JPG'} alt="link1" layout="responsive" width={10} height={10} className="img-content"/>

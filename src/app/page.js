@@ -1,17 +1,17 @@
 import Hero from "@/components/layout/Hero";
-import Content1 from "@/components/layout/Content1";
+import AboutUs from "@/components/layout/aboutUs";
 import BrandGallery from "@/components/layout/brandGallery";
-import Content2 from "@/components/layout/Content2";
+import LinkList from "@/components/layout/link-list";
 import ScrollNav from "@/components/items/scrollAnimation";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero/>
       <ScrollNav/>
-      <BrandGallery />
-      <Content1 />
-      <Content2/>
+      <BrandGallery/>
+      <AboutUs/>
+      <LinkList/>
     </>
   );
 }

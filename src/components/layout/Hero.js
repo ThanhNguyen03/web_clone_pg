@@ -11,14 +11,11 @@ export default function Hero() {
     const onPause = () => {
         setIsPause(!isPause);
         const imgs = Array.from(document.getElementsByClassName('circle'));
-        // const slide = document.querySelector('.slide');
 
         if (!isPause) {
-            imgs.map(img => img.classList.add('animate-pause'));          
-            // slide.classList.add('animate-pause');
+            imgs.map(img => img.classList.add('animate-pause'));
         } else {
             imgs.map(img => img.classList.remove('animate-pause'));
-            // slide.classList.remove('animate-pause');
         }
     };
     
@@ -50,22 +47,8 @@ export default function Hero() {
                     </button>
                 </div>
             )}
-            <div className="overflow-hidden absolute z-10 left-0 right-0 min-h-full h-md circle ">
-                <div className="relative ">
-                    <Image src={'/IMG_2800.JPG'} alt={'pic1'} layout={'responsive'} width={100} height={10}/>
-                </div>
-                <div className="relative">
-                    <Image src={'/IMG_2801.JPG'} alt={'pic3'} layout={"responsive"} width={100} height={10}/>
-                </div>
-                <div className="relative">
-                    <Image src={'/IMG_2802.JPG'} alt={'pic4'} layout={"responsive"} width={100} height={10}/>
-                </div>
-                <div className="relative">
-                    <Image src={'/IMG_2804.JPG'} alt={'pic5'} layout={"responsive"} width={100} height={10}/>
-                </div>
-                <div className="relative">
-                    <Image src={'/IMG_2809.JPG'} alt={'pic6'} layout={"responsive"} width={100} height={10}/>
-                </div>
+            <div className="z-10 left-0 right-0 h-[calc(100vh-33px)] max-w-[100wh] bg-transparent overflow-hidden">
+                <div style={{ backgroundImage: `url(/IMG_2800.JPG)` }} className="left-0 right-0 bg-cover w-full h-[100vh] circle"/>
             </div>
         </section>
     );

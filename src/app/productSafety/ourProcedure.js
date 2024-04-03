@@ -1,4 +1,4 @@
-export default function Content1() {
+export default function OurProcedure() {
     return (
         <>
             <div className="mx-32 mt-16">

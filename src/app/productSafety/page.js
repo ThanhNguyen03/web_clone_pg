@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Content1 from "./content1";
+import OurProcedure from "./ourProcedure";
 import VideoContent from "./videoContent";
 import ProductIngredient from "./productIngredient";
 import MoreInformation from "./moreInfor";
@@ -26,7 +26,7 @@ export default function ProductSafetyPage() {
                     </div>
                 </div>
             </section>
-            <Content1/>
+            <OurProcedure/>
             <section className="bg-wrappercolor">
                 <VideoContent/>
                 <ProductIngredient/>

@@ -6,50 +6,28 @@ import PrevArrow from "./prevButton";
 import "slick-carousel/slick/slick.css";
 import BrandItem from "./brandItem";
 
-function BrandSlider() {
+function BrandSlider({slideShow, slideScoll}) {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 2,
+    slidesToShow: slideShow,
+    slidesToScroll: slideScoll,
     nextArrow: <NextArrow/>,
     prevArrow: <PrevArrow/>
   };
   return (
-      <Slider {...settings} className="max-w-[1512.8px]">
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2800.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2801.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2802.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2804.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2809.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2802.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2800.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2804.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2801.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2809.JPG'}/>
-        </div>
-        <div className="">
-          <BrandItem title={'123'} src={'/IMG_2802.JPG'}/>
-        </div>
+      <Slider {...settings}>
+        <BrandItem title={'123'} src={'/IMG_2800.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2801.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2802.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2804.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2809.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2802.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2800.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2804.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2801.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2809.JPG'}/>
+        <BrandItem title={'123'} src={'/IMG_2802.JPG'}/>
       </Slider>
   );
 }

@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link";
 import VideoModal from "./VideoModal";
 import { useState } from "react";
 import PlayIcon from "@/components/icons/play";
