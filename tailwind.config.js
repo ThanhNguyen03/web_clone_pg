@@ -32,5 +32,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss/postcss7-compat'),
+  ],
 };
